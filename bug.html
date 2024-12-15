@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //This is the buggy part. It uses an undeclared variable which can lead to unexpected behavior.  
+    document.getElementById("myDiv").innerHTML = myVar; 
+  </script>
+</body>
+</html>
